@@ -1,0 +1,247 @@
+@import 'variables.scss';
+@import 'main.scss';
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Changa', sans-serif;
+}
+header{
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+}
+.logo {
+    width: 100px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.logo:hover{
+    opacity: 1;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+nav {
+    display: flex;
+    gap: 35px;
+}
+.nav-link {
+    text-decoration: none;
+    color: #ffffff82;
+}
+.nav-link:hover{
+    color: white;
+}
+.header-up {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+.mid-photo {
+    height: 650px;
+    width: 447px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.header-mid {
+    display: flex;
+    justify-content: space-around;
+}
+.mid-text{
+    color: white;
+    position: absolute;
+    color: white;
+    position: absolute;
+    align-items: stretch;
+    display: grid;
+    justify-items: center;
+    font-size: 35px;
+    bottom: 100px;
+}
+h1 {
+    margin: 0 0 10px 0;
+}
+.about{
+    height: 750px;
+    background-color: rgba(255, 250, 250, 0.819);
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+.about-header {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: 200;
+}
+.about-content{
+    display: flex;
+    gap: 70px;
+}
+.w50 {
+    min-width: 50%;
+}
+.content-img {
+    height: 665px;
+    display: flex;
+}
+.content-img img{
+    box-shadow: 0 0 5px 3px #000000;
+}
+/* Media */
+
+.media{
+    width: 100%;
+    height: 400px;
+    background-color: #000000;
+    overflow: hidden;
+    padding: 5px;
+}
+.media-header {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: 200;
+    color: white;
+}
+.media-carts{
+    display: flex;
+}
+.card{
+    height: 350px;
+    min-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.card-img{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    border-radius: 79%;
+    overflow: hidden;
+}
+.card-title a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: xx-large;
+    color: white;
+}
+.card:hover {
+    transform: scale(0.9, 0.9);
+}
+/* MOVIES */
+.movies{
+    width: 100%;
+    height: 112vh;
+    padding: 10px;
+}
+
+.movies-header {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: 200;
+    color: black;
+}
+.movies-cards{
+    height: 100vh;
+    overflow-y: scroll;
+}
+.mcard{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    display: flex;
+}
+.mcard2{
+    background: #000000d9 !important
+}
+.mcard-img{
+    max-width: 433px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mcard-img img{
+    height: 90%;
+    width: 95%;
+    box-shadow: 0px 0px 15px -4px #ffffff;
+}
+.mcard-about{
+    width: 62%;
+    height: 300px;
+    display: flex;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+h2,
+h4{
+    margin: 0;
+    padding: 0;
+}
+.mcard-about p{
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    width: 9px;
+}
+    ::-webkit-scrollbar-track{
+    border-radius: 10px;
+}
+    ::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 0, 0);
+}
+    ::-webkit-scrollbar-thumb:hover{
+    background-color:#000000d9;
+}
+.mcard-bottom{
+    width: 100%;
+    height: 85px;
+    border: 1px 1px 1px 0 solid black;
+}
+/* CONTACT */
+.contact{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.contact-header {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: 200;
+    color: white;
+}
+.contact-email{
+    color: white;
+}
+.contact-email .email img{
+    width: 35px;
+    box-shadow: 0px 0px 15px -4px #ffffff;
+    background-color: white;
+}
+.email{
+    border-bottom: 3px solid;
+    gap: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
